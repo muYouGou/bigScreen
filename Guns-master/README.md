@@ -1,59 +1,15 @@
 <p align="center">
-    <img src="https://images.gitee.com/uploads/images/2019/0109/214218_d2aa949b_551203.png" width="300">
-    <br>      
-    <br>      
     <p align="center">
-        Guns基于Spring Boot2，致力于做更简洁的后台管理系统。包含系统管理，代码生成，多数据库适配，SSO单点登录，工作流，短信，邮件发送，OAuth2登录，任务调度，持续集成，docker部署等功。支持Spring Cloud Alibaba微服务。社区活跃，版本迭代快，加群免费技术支持。
+        基于Spring Boot2，致力于做更简洁的后台管理系统。包含系统管理，代码生成，多数据库适配，SSO单点登录，工作流，短信，邮件发送，OAuth2登录，任务调度，持续集成，docker部署等功。支持Spring Cloud Alibaba微服务。社区活跃，版本迭代快.
         <br>      
-        <br>      
-        <span>
-            <span>
-                Guns官方交流群：254550081(满)   684163663(满)   207434260(满)(三个群已满，扫下方二维码加官方微信群)
-            </span>
-        </span>
-        <br>
-        <br>
-        <a href="https://easyweb.vip/">
-            <img src="https://img.shields.io/badge/easyweb-3.1.5-green.svg" alt="bootstrap">
-        </a> 
-        <a href="https://www.layui.com">
-            <img src="https://img.shields.io/badge/layui-2.5.5-blue.svg" alt="bootstrap">
-        </a>  
-        +
-        <a href="http://spring.io/projects/spring-boot">
-            <img src="https://img.shields.io/badge/spring--boot-2.1.6-green.svg" alt="spring-boot">
-        </a>
-        <a href="http://mp.baomidou.com">
-            <img src="https://img.shields.io/badge/mybatis--plus-3.0-blue.svg" alt="mybatis-plus">
-        </a>  
-        <a href="http://ibeetl.com/">
-            <img src="https://img.shields.io/badge/beetl-2.9.3-yellow.svg" alt="beetl">
-        </a> 
     </p>
 </p>
 
 -----------------------------------------------------------------------------------------------
 
 ### 在线demo
-* 账号密码：admin/111111，地址：http://demo.stylefeng.cn
-* 阿里云双十一特惠，1C2G 86/年 [点我领取](https://www.aliyun.com/1111/2019/group-buying-share?ptCode=CFCF7A45B182263D40A14DAAB0B30EFD647C88CF896EF535&userCode=p4kqz45e&share_source=copy_link)
+* 账号密码：admin/Asdfg12345.
 
-### 最新免费教程
-[https://www.bilibili.com/video/av56718207](https://www.bilibili.com/video/av56718207)
-
-配套课件：[http://www.safeinfo.com.cn//Guns-Guide](http://www.safeinfo.com.cn//Guns-Guide)
-
-### 扫码关注官方公众号和官方微信群
-<table>
-    <tr>
-        <td>官方公众号</td>
-        <td><img src="https://images.gitee.com/uploads/images/2019/0415/104911_9bc924a5_551203.png" width="120"/></td>
-        <td>扫码邀请入群</td>
-        <td><img src="https://images.gitee.com/uploads/images/2019/0419/103622_d6e9fa5d_551203.png" width="120"/></td>
-    </tr>
-</table>
-
-### 最新6.0更新内容如下(更新日期2019.10.25)
 
 1. 前端框架升级easyweb 3.1.5，layui升级2.5.5。
 2. 优化整体前端UI界面，更加简洁，大气。
@@ -64,23 +20,6 @@
 7. 系统的验证码开关，顶部导航栏开关，系统默认密码等在常量容器进行维护，极大方便了系统使用。
 8. 所有页面加载的css和js进行版本控制，当升级项目时，更新对应版本号，可控制浏览器对缓存js和css的刷新。
 9. 增加用户的职务管理，可对用户进行职务绑定。
-
-### Guns版本说明
-
-| 版本名称 | 说明 | 地址 |
-| :---: | :---: | :---: |
-| Guns v6.0 | 最新开源版本，采用layui | http://www.safeinfo.com.cn//guns |
-| Guns v5.1 | Guns经典版的最新版，采用bootstrap 3 | http://www.safeinfo.com.cn//guns/tree/v5.1-final |
-
-### Guns 企业版
-* 企业级，功能更强大，创新代码生成，高级sso，微服务，容器化部署等，详情点击[https://www.stylefeng.cn](https://www.stylefeng.cn)
-* 买企业版送最新Guns技术文档和视频教程，[点击查看技术文档](http://www.safeinfo.com.cn//guns/wikis/pages?title=Guns%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3&parent=)，[点击查看视频教程](http://www.safeinfo.com.cn//guns/wikis/pages?title=Guns%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B&parent=)
-
-### 版权声明
-Guns采用LGPL-3.0开源协议
-
-### Guns前端模板
-* Guns最新旗舰版，所用前端模板为EasyWeb后台开发框架,官网地址为：[https://easyweb.vip/](https://easyweb.vip/)，使用时已征求作者允许。
 
 ### 管理系统功能
 1.用户管理 2.角色管理 3.部门管理 4.菜单管理 5.字典管理 6.业务日志 7.登录日志 8.监控管理 9.通知管理 10.职务管理 11.代码生成 12.在线参数配置
@@ -159,8 +98,6 @@ Guns采用LGPL-3.0开源协议
 ### 对js常用代码的封装
 在webapp/static/js/common目录中，有对常用js代码的封装，例如Feng.js，其中Feng.info()，Feng.success()，Feng.error()三个方法，分别封装了普通提示，成功提示，错误提示的代码，简化了layer提示层插件的使用。
 
-### 极简的图片上传方法
-guns对web-upload进行二次封装，让图片的上传功能呢只用2行代码即可实现，如下
 ```
 var avatarUp = new $WebUpload("avatar");
 avatarUp.init();
@@ -191,39 +128,3 @@ jwt token鉴权机制是指若需要请求服务器接口，必须通过AuthCont
 
 ### 签名机制
 签名机制是指客户端向服务端传输数据中，对传输数据进行md5加密，并且加密过程中利用Auth接口返回的随机字符串进行混淆加密，并把md5值同时附带给服务端，服务端通获取数据之后对数据再进行一次md5加密，若加密结果和客户端传来的数据一致，则认定客户端请求的数据是没有被篡改的，若不一致，则认为被加密的数据是被篡改的
-
-### Guns经典版效果图
-<table>
-    <tr>
-        <td><img src="https://git.oschina.net/uploads/images/2017/0604/194616_36ed7fd6_551203.png"/></td>
-        <td><img src="https://git.oschina.net/uploads/images/2017/0604/194623_a0761bc3_551203.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://git.oschina.net/uploads/images/2017/0604/194630_640dfd35_551203.png"/></td>
-        <td><img src="https://git.oschina.net/uploads/images/2017/0526/104015_bdb14c74_551203.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://git.oschina.net/uploads/images/2017/0516/000735_b83c5c46_551203.png"/></td>
-        <td><img src="https://git.oschina.net/uploads/images/2017/0526/103734_bd3e8f6b_551203.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://git.oschina.net/uploads/images/2017/0604/194539_f9bb482a_551203.png"/></td>
-        <td><img src="https://git.oschina.net/uploads/images/2017/0526/103746_6b4129ed_551203.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://git.oschina.net/uploads/images/2017/0526/103755_7729b916_551203.png"/></td>
-        <td><img src="https://git.oschina.net/uploads/images/2017/0526/103801_b8216865_551203.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://git.oschina.net/uploads/images/2017/0526/103807_20bfb868_551203.png"/></td>
-        <td><img src="https://git.oschina.net/uploads/images/2017/0526/103814_67e078bb_551203.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://git.oschina.net/uploads/images/2017/0526/103822_58fd5d91_551203.png"/></td>
-        <td><img src="https://git.oschina.net/uploads/images/2017/0526/103827_d6218c74_551203.png"/></td>
-    </tr>
-</table>
-
-### stylefeng开源技术
-
-官网：https://www.stylefeng.cn/

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.sys.modular.system.mapper.SysBigScreenLogMapper">
+
+
+
+
+    <select id="list" resultType="map">
+        select
+            big_screen_log_id AS "bigScreenLogId",
+            user_name AS "userName",
+            user_id AS "userId",
+            screen_name AS "screenName",
+            create_time AS "createTime"
+        from sys_big_screen_log
+        <if test="condition != null and condition != ''">
+            where screen_name like CONCAT('%',#{condition},'%') or content like CONCAT('%',#{condition},'%')
+        </if>
+        order by create_time DESC
+    </select>
+</mapper>

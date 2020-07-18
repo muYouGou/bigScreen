@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.sys.modular.system.mapper.BigScreenAdminMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.sys.modular.system.entity.BigScrennAdmin">
+        <id column="big_screen_id" property="bigScreenId"/>
+        <result column="code" property="code"/>
+        <result column="pcode" property="pcode"/>
+        <result column="pcodes" property="pcodes"/>
+        <result column="title" property="title"/>
+        <result column="assistant_title" property="assistantTitle"/>
+        <result column="url" property="url"/>
+        <result column="sort" property="sort"/>
+        <result column="levels" property="levels"/>
+        <result column="description" property="description"/>
+        <result column="status" property="status"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_user" property="createUser"/>
+        <result column="update_user" property="updateUser"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        big_screen_id AS "bigScreenId", code AS "code",
+        pcode AS "pcode", pcodes AS "pcodes",
+        title AS "title", assistant_title AS "assistantTitle",
+        url AS "url", sort AS "sort", levels AS "levels",
+        menu_flag AS "menuFlag", description AS "description",
+        status AS "status", create_time AS "createTime",
+        update_time AS "updateTime", create_user AS "createUser",
+        update_user AS "updateUser"
+    </sql>
+
+    <sql id="Base_Column_List_one">
+        m.big_screen_id AS "bigScreenId", m.code AS "code",
+        m.pcode AS "pcode", m.pcodes AS "pcodes",
+        m.title AS "title", m.assistant_title AS "assistantTitle",
+        m.url AS "url", m.sort AS "sort", m.levels AS "levels",
+        m.menu_flag AS "menuFlag", m.description AS "description",
+        m.status AS "status", m.create_time AS "createTime",
+        m.update_time AS "updateTime", m.create_user AS "createUser",
+        m.update_user AS "updateUser",
+        m.avatar AS "avatar"
+    </sql>
+
+
+
+    <select id="selectMenuTree" resultType="java.util.Map">
+       select
+        <include refid="Base_Column_List_one" />
+       from sys_big_screnn_admin m
+       where m.status = 'ENABLE'
+        <if test="condition != null and condition != ''">
+            and m.title like CONCAT('%',#{condition},'%')
+        </if>
+        order by m.sort
+    </select>
+
+
+    <select id="menuTreeList" resultType="cn.stylefeng.guns.base.pojo.node.ZTreeNode">
+        SELECT
+            m1.big_screen_id AS id,
+            ( CASE
+                WHEN (m2.big_screen_id = 0 OR m2.big_screen_id IS NULL) THEN 0
+                ELSE m2.big_screen_id END
+            ) AS pId,
+            m1.title
+            AS name,
+            ( CASE
+                WHEN (m2.big_screen_id = 0 OR m2.big_screen_id IS NULL) THEN 'true'
+                ELSE 'false' END
+            ) as "open"
+        FROM
+            sys_big_screnn_admin m1
+            LEFT join sys_big_screnn_admin m2 ON m1.pcode = m2.code
+        ORDER BY m1.big_screen_id ASC
+    </select>
+
+
+    <select id="getMenusLikePcodes" resultType="cn.stylefeng.guns.sys.modular.system.entity.BigScrennAdmin">
+        select
+        <include refid="Base_Column_List"></include>
+        from sys_big_screnn_admin where 1 = 1
+        <if test="code != null and code != ''">
+            and pcodes LIKE CONCAT('%$[',#{code},'$]%') escape '$'
+        </if>
+    </select>
+
+</mapper>

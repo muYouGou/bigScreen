@@ -1,0 +1,74 @@
+html,
+body,div,td,tr,span,p,h3,h4,h5,h6,h2,h1,a,tr,table,ul,li {
+  font-family:"Helvetica Neue","Microsoft YaHei", Tahoma;
+}
+
+body{ overflow-y: hidden; }
+.clear {
+  clear: both;
+}
+
+.line {
+  margin: 10px auto;
+  width: 100%;
+  height: 1px;
+  overflow: hidden;
+  background: #e1e1e1;
+}
+
+html,body{ margin:0; padding:0; }
+
+
+
+
+
+      
+      .wrapper{ width: 100%; background:url(../images/images/bg.jpg); width: 5760px; height: 1080px; overflow:hidden; }
+      .row_a1,.row_a2,.row_a3,.row_a4{ width: 1346px; height:900px; float:left; margin-top:122px; padding:20px 30px; overflow: hidden; overflow-y:auto; }
+      .row_a1{ margin-left:40px; }
+      .row_a2{ margin-left:15px; }
+      .row_a3{ margin-left:20px; }
+      .row_a4{ margin-left:20px; }
+
+
+.row_a1 a:hover .lit_row,.row_a2 a:hover .lit_row,.row_a3 a:hover .lit_row,.row_a4 a:hover .lit_row{ background:url(../images/images/lit_bg_active.png) no-repeat;}
+.row_a1 a:hover .lit_row .r_tittle,.row_a2 a:hover .lit_row .r_tittle,.row_a3 a:hover .lit_row .r_tittle,.row_a4 a:hover .lit_row .r_tittle{color: #ffda2d;}
+
+      .lit_row{ background:url(../images/images/lit_bg.png) no-repeat; width:618px; height: 204px; overflow: hidden; float: left; margin-left:35px; margin-top:10px; margin-bottom:10px; }
+
+.r_tittle{ text-align: center; height: 70px; line-height: 70px; color: #00ffff; font-size:26px; font-weight: bold ; }
+.r_lit_tit{ font-size:22px; font-weight: 500; }
+.r_img{ text-align: center; width: 570px; height: 106px; overflow: hidden; margin:0 auto; }
+.r_img img{ height: 100%; width: 100%;}
+
+.hy-box{ margin-top:20px; margin-left:30px; }
+.hy-dot{bottom:0px;}
+.hy-dot i.active {
+    background: #00ffff;
+}
+
+
+.wrapper-login{ width: 100%; position: relative; background: url(../images/images/login_wra_bg.jpg) no-repeat; width: 5760px; height: 1080px; overflow-y: hidden; }
+
+
+
+.scrollbar {
+  }
+  .scrollbar::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width : 7px;  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 7px;
+  box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background   : rgba(0,255,255,.5);
+  }
+  .scrollbar::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  background   : rgba(0,0,0,.6);
+  }
+
